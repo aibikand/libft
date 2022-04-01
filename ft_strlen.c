@@ -10,33 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
 	int	adder;
 
 	adder = 0;
-	while (str[adder] != '\0')
+	while (s[adder] != '\0')
 	{
 		adder++;
 	}
 	return (adder);
-}
-/*int	ft_strlen(char *str);
 
-int	main(void)
+}
+
+/* int	main(void)
 {
-	char	str[20];
-	int		comprobar;
+	const char	s[6] = "hello";
 
-	str[0] = 'H';
-	str[1] = 'e';
-	str[2] = 'l';
-	str[3] = 'l';
-	str[4] = 'o';
-	comprobar = ft_strlen(str);
-	ft_putchar(comprobar + '0');
+	printf("%zu\n", ft_strlen(s));
 	return (0);
-}
-*/
+} */
