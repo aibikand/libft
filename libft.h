@@ -12,6 +12,7 @@
 
 #ifndef	LIBFT_H
 #define LIBFT_H
+#include "libft.h"
 #include <stdlib.h>
 #include <unistd.h>
 #include <ctype.h>
