@@ -11,25 +11,24 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
-#include <stdio.h>
+/* #include <unistd.h>
+#include <stdio.h> */
 
 int		ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-		c = - 'A' + 'a';
+		c = c - 'A' + 'a';
 	return (c);
 }
-int	main()
+/* int	main()
 {
    int i = 0;
-   char c;
-   char str[] = "W3CSCHOOL TUTORIALS";
+   char str[] ="ASKJFLL";
 
-   	while(str[i])
+	while(str[i])
    	{
-      putchar(tolower(str[i]));
+    	putchar(ft_tolower(str[i]));
       i++;
    	}
 	return(0);
-}
+} */
