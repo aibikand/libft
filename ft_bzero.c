@@ -6,13 +6,11 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 08:53:34 by aibikand          #+#    #+#             */
-/*   Updated: 2022/03/31 09:01:17 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/04 13:40:33 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <strings.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

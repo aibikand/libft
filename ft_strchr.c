@@ -6,32 +6,37 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 10:31:56 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/02 12:58:27 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/06 11:43:21 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char 	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	char *str;
+	int		i;
+	char	*str;
 
+	i = 0;
 	str = (char *)s;
-
-	while (*str)
+	while (str[i])
 	{
-		if (*str == c)
+		if (str[i] == c)
 		{
-		str++;
+			return (&str[i]);
 		}
+		i++;
 	}
-	return(NULL);
+	if (c == '\0')
+	{
+		return (&str[i]);
+	}
+	return (NULL);
 }
 
-/*
-int main ()
+/* int main ()
 {
-   const char str[] = "MariPepaandres";
+   const char str[] = "MariPepadandres";
    const char ch = 'd';
    char *ret;
 
@@ -47,7 +52,8 @@ Parámetros: La cadena a analizar, la letra que se busca
 
 Valor devuelto: La posición (puntero) o NULL
 
-if (strchr(texto,letra) == NULL) puts("No la contiene");
+if		(strchr(texto,letra) == NULL) puts("No la contiene");
 
 Detalles:
-Devuelve NULL si no la contiene, o un puntero a la posición en que se encuentra, en caso contrario */
+Devuelve NULL si no la contiene, o un puntero a la posición en que se encuentra,
+	en caso contrario */

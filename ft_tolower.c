@@ -6,21 +6,19 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 17:05:20 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/01 17:47:30 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/06 08:09:03 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-/* #include <unistd.h>
-#include <stdio.h> */
 
-int		ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c = c - 'A' + 'a';
 	return (c);
 }
-/* int	main()
+/* int	main(void)
 {
    int i = 0;
    char str[] ="ASKJFLL";

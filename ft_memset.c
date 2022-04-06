@@ -6,13 +6,11 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 12:35:51 by aibikand          #+#    #+#             */
-/*   Updated: 2022/03/29 15:35:46 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/04 16:06:00 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -20,13 +18,13 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t			i;
 
 	i = 0;
-	src = b; /* convertimos void en char */
+	src = b;
 	while (i < len && src[i])
 	{
-		src[i] = (unsigned char)c; /* convertimos c en char */
+		src[i] = (unsigned char)c;
 		i++;
 	}
-	return (src); /* retornamos el string ya convertido */
+	return (src);
 }
 
 /* int	main(void)

@@ -6,12 +6,11 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 16:58:27 by aibikand          #+#    #+#             */
-/*   Updated: 2022/03/28 16:58:32 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/04 15:24:46 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
@@ -23,7 +22,6 @@ size_t	ft_strlen(const char *s)
 		adder++;
 	}
 	return (adder);
-
 }
 
 /* int	main(void)

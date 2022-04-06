@@ -6,43 +6,50 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 08:53:29 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/01 11:26:20 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/05 13:40:36 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
- {
-	size_t	x;
+{
+	size_t	dest;
+	size_t	orig;
 	size_t	i;
 
-	x = 0;
 	i = 0;
-	while (dst[x])
+	dest = ft_strlen(dst);
+	orig = ft_strlen(src);
+	if (dstsize < dest + 1)
 	{
-		x++;
+		return (orig + dstsize);
 	}
-	while (src[i] != '\0' && i < dstsize)
+	while (dest + i + 1 < dstsize && src[i] != '\0')
 	{
-		dst[x] = src[i];
-		x++;
+		dst[dest + i] = src[i];
 		i++;
 	}
-	dst[x] = '\0';
-	return (x);
+	dst[dest + i] = '\0';
+	return (dest + orig);
 }
-int	main(void)
-{
-	char src[] = "buenas";
-	char dst[] = "hola";
-	size_t val;
 
-	size_t dstsize = 6;
-	val = ft_strlcat(dst, src, dstsize);
+/* 	int main(void)
+{
+	size_t		dstsize;
+	char		dst[] = "bue";
+	const char	src[] = "hola";
+	size_t		val;
+
+	dstsize = 6;
+	printf("Este es el valor de la funcion de Aitor:\n");
+	ft_strlcat(dst, src, dstsize);
 	printf("%s\n", dst);
-	printf("%zu", val);
+	printf("Este es el valor del retorno de la funcion de Aitor:\n");
+	val = ft_strlcat(dst, src, dstsize);
+	printf("%zu\n", val);
+	printf("Este es el resultado de la funcion original:\n");
+	strlcat(dst, src, dstsize);
+	printf("%s\n", dst);
 	return (0);
-}
+} */

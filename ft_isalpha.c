@@ -6,13 +6,13 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 16:02:44 by aibikand          #+#    #+#             */
-/*   Updated: 2022/03/29 10:34:33 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/04 13:42:45 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h>
+#include "libft.h"
 
-int	ft_isalpha(int c);
+/* int	ft_isalpha(int c);
 
 int	main(void)
 {

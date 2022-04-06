@@ -1,35 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 11:50:39 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/04 15:28:29 by aibikand         ###   ########.fr       */
+/*   Created: 2022/04/02 14:01:06 by aibikand          #+#    #+#             */
+/*   Updated: 2022/04/06 12:02:25 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*int	ft_isascii(int c);
-
-int	main(void)
+char	*ft_strrchr(const char *s, int c)
 {
-	int	test;
+	int		i;
+	char	*str;
 
-	test = '_';
-	printf("%d\n", ft_isascii(test));
-	return (0);
-} */
-int	ft_isascii(int c)
-{
-	if (c >= 0 && c <= 127)
+	i = 0;
+	str = (char *)s;
+	while (str[i] != '\0')
 	{
-		return (1);
+		i++;
 	}
-	else
+	while (i >= 0)
 	{
-		return (0);
+		if (str[i] == c)
+		{
+			return (&str[i]);
+		}
+		i--;
 	}
+	return (NULL);
 }
+
+/* int main ()
+{
+   const char str[] = "MariPedpaandres      ";
+   const char ch = 'w';
+   char *ret;
+
+   ret = ft_strrchr(str, ch);
+   printf("%s\n", ret);
+
+    ret = strrchr(str, ch);
+   printf("%s\n", ret);
+
+
+   return(0);
+} */
