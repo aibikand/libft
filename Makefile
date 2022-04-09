@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+         #
+#    By: marvin <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/02 09:24:54 by aibikand          #+#    #+#              #
-#    Updated: 2022/04/06 13:15:08 by aibikand         ###   ########.fr        #
+#    Updated: 2022/04/09 17:54:41 by marvin           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,31 +18,38 @@ SRCS = ft_isalpha.c\
 	   ft_isascii.c\
 	   ft_isprint.c\
 	   ft_strlen.c\
-	   *ft_memset.c\
+	   ft_memset.c\
 	   ft_bzero.c\
-	   *ft_memcpy.c\
-	   *ft_memmove.c\
+	   ft_memcpy.c\
+	   ft_memmove.c\
 	   ft_strlcpy.c\
 	   ft_strlcat.c\
 	   ft_toupper.c\
 	   ft_tolower.c\
-	   *ft_strchr.c\
-	   *ft_strrchr.c\
+	   ft_strchr.c\
+	   ft_strrchr.c\
 	   ft_strncmp.c\
+	   ft_memcmp.c\
 	   ft_memchr.c\
-	   *ft_memcmp.c\
+	   ft_strnstr.c\
+	   ft_atoi.c\
+	   ft_calloc.c\
+	   ft_strdup.c\
+	   ft_substr.c\
 
 OBJECTS = $(SRCS:.c=.o)
+
+CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OBJECTS)
-	ar rc $(NAME) $(OBJECTS)
+$(OBJECTS): %.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
-$(OBJECTS): $(SRCS)
-	gcc $(CFLAGS) -c $(SRCS)
+$(NAME): $(OBJECTS)
+	ar rcs $@ $^
 
 clean:
 	@rm -f $(OBJECTS)
