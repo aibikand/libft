@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 14:01:06 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/06 12:02:25 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/11 18:59:24 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	while (i >= 0)
 	{
-		if (str[i] == c)
+		if (str[i] == (unsigned char)c)
 		{
 			return (&str[i]);
 		}
