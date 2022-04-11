@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/09 11:36:30 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/09 13:54:50 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/11 09:28:50 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	s_new[i] = '\0';
 	return (s_new);
 }
-/*
-int	main(void)
+
+/* int	main(void)
 {
 	char	*s = "hola buenas tardes";
 

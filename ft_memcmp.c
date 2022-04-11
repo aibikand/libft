@@ -2,15 +2,16 @@
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/31 09:13:16 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/06 08:13:55 by aibikand         ###   ########.fr       */
+/*                                                    +:+ +:+
+	+:+     */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+
+	+#+        */
+/*                                                +#+#+#+#+#+
+	+#+           */
+/*   Created: 2022/04/05 20:13:32 by marvin            #+#    #+#             */
+/*   Updated: 2022/04/05 20:13:32 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 #include "libft.h"
 
@@ -35,5 +36,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 /* Para un valor devuelto distinto de cero,
 	el signo está determinado por el signo de */
 /* la diferencia entre el primer par de bytes (interpretado como */
-/* char sin firmar) que difieren en s1 y s2. */
+/* unsigned char) que difieren en s1 y s2. */
 /* Si n es cero, el valor devuelto es cero. */

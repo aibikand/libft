@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/28 12:53:48 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/11 15:51:53 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/09 13:45:20 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef	LIBFT_H
-# define LIBFT_H
+#define LIBFT_H
 #include <stdlib.h>
 #include <unistd.h>
 #include <ctype.h>

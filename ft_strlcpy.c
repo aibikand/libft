@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 14:59:57 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/11 18:55:28 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/11 13:38:34 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,19 +32,16 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (i);
 }
-
 /*
 int	main(void)
 {
-	char	src[10];
-	char	dst[10];
+	char	src[] = "felipa";
+	char	dst[] = "pepe";
 	size_t	dstsize;
 
-	src[10] = "";
-	dst[10] = "pepe";
 	dstsize = 3;
 	printf("%zu\n", ft_strlcpy(dst, src, dstsize));
-	printf("%s", dst);
+	printf("%zu\n", strlcpy(dst, src, dstsize));
 	return (0);
 }
  */

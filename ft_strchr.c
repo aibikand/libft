@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 10:31:56 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/11 18:57:08 by marvin           ###   ########.fr       */
+/*   Updated: 2022/04/11 12:23:00 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,15 @@ char	*ft_strchr(const char *s, int c)
 
 /* int main ()
 {
-   const char str[] = "MariPepadandres";
-   const char ch = 'd';
+   const char str[] = "tripouille";
+   const char ch = 't';
    char *ret;
 
    ret = strchr(str, ch);
-
-   printf("%s", ret);
-
-   return(0);
+	printf("%s\n", ret);
+	ret = ft_strchr(str, ch);
+	printf("%s\n", ret);
+	return(0);
 } */
 /* Declaración: char *strchr(const char *cadena, int caracter);
 

@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 08:16:19 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/05 10:40:28 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/09 10:18:54 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 }
 /* int main (void)
 {
-	const char s1[20] = "elec";
-	const char s2[20] = "elefante";
+	const char s1[20] = "plectricidad";
+	const char s2[20] = "maricarmen";
 	int i;
 
 	size_t n = 5;

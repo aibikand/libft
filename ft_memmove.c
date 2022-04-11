@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 12:09:49 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/05 12:45:29 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/09 13:50:55 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 /* int	main(void)
 {
 	unsigned char	src[]= "buenas noches";
-	unsigned char	dest[] = "888888888888888888888";
+	unsigned char	dest[] = "88888888888888888";
 
 	size_t len = 5;
 	printf("%s\n", ft_memmove(dest, src, len));
