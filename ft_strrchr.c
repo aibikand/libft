@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 14:01:06 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/11 12:39:44 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/28 09:08:16 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,16 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
+/* DESCRIPCIÓN
+
+     La función strrchr() es idéntica a strchr(),
+	 excepto que localiza la última aparición de c.
+
+VALORES DEVUELTOS
+     Las funciones strchr() y strrchr() devuelven
+	 un puntero al carácter localizado, o NULL
+	 si el carácter no aparece en el strig. */
+
 /* int main ()
 {
    const char str[] = "MariPedpaandres      ";
@@ -44,8 +54,6 @@ char	*ft_strrchr(const char *s, int c)
    printf("%s\n", ret);
 
     ret = strrchr(str, ch);
-   printf("%s\n", ret);
-
-
-   return(0);
+   	printf("%s\n", ret);
+	return(0);
 } */

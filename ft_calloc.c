@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 15:30:00 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/08 09:05:49 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/27 11:50:57 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*dest;
 
-	dest = malloc(sizeof(size) * count);
+	dest = malloc(size * count);
 	if (!dest)
 	{
 		return (NULL);
@@ -24,6 +24,13 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_memset(dest, 0, size * count);
 	return (dest);
 }
+/* asignación de memoria */
+
+
+/* La función calloc() asigna de manera contigua suficiente espacio
+para contar objetos que son bytes de tamaño de memoria cada uno y
+devuelve un puntero a la memoria asignada.
+La memoria asignada se llena con bytes de valor cero */
 
 /* int	main(void)
 {

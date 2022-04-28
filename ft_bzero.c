@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 08:53:34 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/04 13:40:33 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/27 12:30:59 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,20 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-/*  void	ft_bzero(void *s, size_t n);
- int main(void)
- {
-		unsigned	char	src[30] = "medicos00feos";
 
-		size_t	n = 1;
+/*  int main(void)
+ {
+		unsigned	char	src[14] = "medicos00feos";
+
+		size_t	n = 15;
 		ft_bzero(src, n);
-		printf("%s", src);
+		printf("la cadena nueva es : %s", src);
  } */
+
+/* DESCRIPTION
+     The bzero() function writes n zeroed bytes to the string s.
+	 If n is zero, bzero() does nothing. */
+
+/* DESCRIPCIÓN
+     La función bzero() escribe n bytes puestos a cero en la cadena s.
+	 Si n es cero, bzero() no hace nada. */

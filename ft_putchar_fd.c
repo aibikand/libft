@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 11:50:39 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/27 12:46:17 by aibikand         ###   ########.fr       */
+/*   Created: 2022/04/18 09:08:52 by aibikand          #+#    #+#             */
+/*   Updated: 2022/04/28 09:38:42 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+void	ft_putchar_fd(char c, int fd)
 {
-	if (c >= 0 && c <= 127)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	write(fd, &c, 1);
 }
 
-/* prueba de carácter ASCII. */
+/* salida de un carácter a un archivo dado. */
 
-/* DESCRIPTION
-     The isascii() function tests for an ASCII character, which is any character between 0 and octal 0177 inclusive. */
+/* La función putchar_fd es una función que envía c caracteres
+como una cadena de bytes al flujo abierto con el
+correspondiente fd (valor del descriptor de archivo) */
 
 /* int	main(void)
 {
-	int	test;
+	char	c;
+	int		fd;
 
-	test = '_';
-	printf("%d\n", ft_isascii(test));
-	return (0);
+	c = 'M';
+	fd = 1;
+	ft_putchar_fd(c, fd);
 } */

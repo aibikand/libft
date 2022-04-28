@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 09:13:16 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/11 13:34:42 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/27 13:10:26 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,17 @@ void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 	}
 	return (dst);
 }
+
+/* copiar área de memoria. */
+
+/* DESCRIPCIÓN
+     La función memcpy() copia n bytes del área de memoria src al área de memoria dst.
+	 Si dst y src se superponen, el comportamiento no está definido.
+     Las aplicaciones en las que dst y src pueden superponerse deberían
+	 usar memmove(3) en su lugar.
+
+VALORES DEVUELTOS
+     La función memcpy() devuelve el valor original de dst. */
 
 /* int	main(void)
 {

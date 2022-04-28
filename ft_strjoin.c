@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 16:07:58 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/12 12:26:23 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/28 08:32:14 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str1[i] = '\0';
 	return (str1);
 }
+/*
+concatenar dos cadenas en una nueva cadena (con malloc). */
+
+/* strjoin, se devuelve una nueva cadena con s1 seguida de s2.
+
+Compruebe la longitud de s1 y s2 e inserte un carácter nulo */
 
 /* int	main(void)
 {

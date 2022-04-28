@@ -1,39 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/03/29 11:50:39 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/27 12:46:17 by aibikand         ###   ########.fr       */
+/*   Created: 2022/04/22 08:02:34 by aibikand          #+#    #+#             */
+/*   Updated: 2022/04/28 10:17:38 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+int	ft_lstsize(t_list *lst)
 {
-	if (c >= 0 && c <= 127)
+	size_t	count;
+
+	count = 0;
+	while (lst != NULL)
 	{
-		return (1);
+		lst = lst->next;
+		count++;
 	}
-	else
-	{
-		return (0);
-	}
+	return (count);
 }
 
-/* prueba de carácter ASCII. */
+/* La función lstsize devuelve el tamaño de la lista. En otras palabras,
+cuenta cuántos elementos están conectados a la lista.
 
-/* DESCRIPTION
-     The isascii() function tests for an ASCII character, which is any character between 0 and octal 0177 inclusive. */
+Dado que el valor devuelto es de tipo int, se puede devolver
+fácilmente con una instrucción while. */
 
-/* int	main(void)
-{
-	int	test;
-
-	test = '_';
-	printf("%d\n", ft_isascii(test));
-	return (0);
-} */
+/* DESCRIPCIÓN:
+Cuenta el número de elementos en una lista. */

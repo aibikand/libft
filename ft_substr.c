@@ -5,45 +5,57 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/09 11:36:30 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/11 09:28:50 by aibikand         ###   ########.fr       */
+/*   Created: 2022/04/19 08:24:53 by aibikand          #+#    #+#             */
+/*   Updated: 2022/04/28 09:14:19 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char			*s_new;
-	unsigned int	i;
+	char	*str;
+	size_t	i;
 
-	if (s == NULL)
+	if (!s)
 		return (NULL);
-	if (len > ft_strlen(s))
-		len = ft_strlen(s);
-	i = 0;
-	s_new = (char *)malloc(sizeof(char) * (len + 1));
-	if (!s_new)
-		return (NULL);
-	while (start > ft_strlen(s))
+	if (start >= ft_strlen(s) || len <= 0)
 	{
-		*s_new = '\0';
-		return (s_new);
+		str = (char *)malloc(1);
+		str[0] = '\0';
+		return (str);
 	}
-	while (len > 0)
+	i = 0;
+	if (len > ft_strlen(s))
+		len = ft_strlen(s) - start;
+	str = (char *)malloc((len + 1) * sizeof(*str));
+	if (!str)
+		return (NULL);
+	while (s[start] && i < len)
 	{
-		s_new[i] = s[start];
+		str[i] = s[start];
 		i++;
 		start++;
-		len--;
 	}
-	s_new[i] = '\0';
-	return (s_new);
+	str[i] = '\0';
+	return (str);
 }
+
+/* extraer subcadena de cadena. */
+
+/* substr es una función que devuelve una nueva cadena al copiar
+desde la longitud de inicio hasta la longitud de len en la cadena de s.
+
+manejo nulo de s
+Devuelve una cadena vacía si la longitud de s es menor que la longitud de inicio
++1 para manejar el carácter '\0' porque es una cadena */
 
 /* int	main(void)
 {
-	char	*s = "hola buenas tardes";
+	char	*s;
 
-	printf("%s\n", ft_substr(s, 5, 8));
+	s = "hola buenas tardes";
+	printf("%s\n", ft_substr(s, 25, 8));
+	return(0);
 } */

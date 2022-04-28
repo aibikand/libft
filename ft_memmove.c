@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/31 12:09:49 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/09 13:50:55 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/27 13:13:12 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,17 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dest);
 }
+
+/* copia cadena de bytes. */
+
+/* DESCRIPCIÓN
+     La función memmove() copia len bytes de la cadena src a la cadena dst.
+	  Las dos cadenas pueden superponerse; la copia siempre se hace en
+     una manera no destructiva.
+
+VALORES DEVUELTOS
+     La función memmove() devuelve el valor original de dst. */
+
 /* int	main(void)
 {
 	unsigned char	src[]= "buenas noches";

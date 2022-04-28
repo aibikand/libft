@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 09:22:47 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/06 10:30:12 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/27 13:06:56 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,14 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (0);
 }
 
+/* DESCRIPCIÓN
+     La función memchr() localiza la primera aparición de c
+	 (convertido a un carácter sin signo) en la cadena s.
+
+VALORES DEVUELTOS
+     La función memchr() devuelve un puntero al byte ubicado,
+	 o NULL si no existe tal byte dentro de n bytes. */
+
 /* int	main(void)
 {
 	char	cadena[] = "Erase una vez...";
@@ -41,6 +49,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	printf("%s\n", puntero);
 	return (0);
 } */
+
+/* localizar el byte en la cadena de bytes. */
+
 /* busca en str el primer caracter que concuerde con c
 y devuelve un puntero al caracter que concuerda
 o null si no lo hay*/

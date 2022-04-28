@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 10:31:56 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/11 12:23:00 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/28 09:06:52 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,18 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
+/* localizar el carácter en la cadena (primera aparición). */
+
+/* DESCRIPCIÓN
+     La función strchr() localiza la primera aparición de c
+	 (convertida en char) en la cadena a la que apunta s. la terminación
+     el carácter nulo se considera parte de la cadena; por lo tanto,
+	 si c es '\0', las funciones ubican el '\0' final. */
+
 /* int main ()
 {
    const char str[] = "tripouille";
-   const char ch = 't';
+   const char ch = 'a';
    char *ret;
 
    ret = strchr(str, ch);
@@ -46,6 +54,9 @@ char	*ft_strchr(const char *s, int c)
 	printf("%s\n", ret);
 	return(0);
 } */
+/* pinta desde la letra que le marcamos hasta el final */
+/* si no lo hay sale NULL */
+
 /* Declaración: char *strchr(const char *cadena, int caracter);
 
 Parámetros: La cadena a analizar, la letra que se busca

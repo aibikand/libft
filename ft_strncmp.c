@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 08:16:19 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/09 10:18:54 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/28 09:01:19 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,24 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
+/* comparar cadenas (limitado por tamaño). */
+
+/* DESCRIPCIÓN
+     Las funciones strcmp() y strncmp() comparan lexicográficamente
+	 las cadenas terminadas en cero s1 y s2.
+
+     La función strncmp() no compara más de n caracteres.
+	 Debido a que strncmp() está diseñado para comparar cadenas en lugar de
+     datos binarios, los caracteres que aparecen después
+	 de un carácter `\0' no se comparan.
+
+VALORES DEVUELTOS
+     Las funciones strcmp() y strncmp() devuelven un número entero mayor,
+	 igual o menor que 0, según sea la cadena s1.
+     mayor que, igual o menor que la cadena s2. La comparación se realiza
+	 utilizando caracteres sin signo, por lo que `\200' es mayor que '\0'. */
+
 /* int main (void)
 {
 	const char s1[20] = "plectricidad";

@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 13:34:33 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/07 12:53:58 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/27 11:16:56 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,21 +38,22 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (0);
 }
 
+/* localizar una subcadena en una cadena
+
+Si needle es una cadena vacía, se devuelve haystack ;
+si la needle no aparece en ninguna parte del haystack,
+se devuelve NULL; de lo contrario, se devuelve un puntero
+al primer carácter de la primera aparición de needle. */
+
 /* int main()
 {
-	char *b = "go go yogurt";
-    char *c = "guner";
-    char *d = ft_strnstr(b,c,'k');
-    char *e = strnstr(b,c,'k');
-    printf("%s\n",e);
+	size_t x;
+
+	x = 4;
+	char *b = "Foo Bar Baz";
+    char *c = "Bar";
+    char *d = ft_strnstr(b,c,x);
+	char *ptr = strnstr(b, c, x);
+    printf("%s\n",ptr);
     printf("%s",d);
 } */
-
-/* La función strnstr() localiza la primera aparición de la terminación nula
-string little en la cadena big, donde no hay más de len carácter
-buscado */
-/* Si little es una cadena vacía,
-	se devuelve big; si poco ocurre en ninguna parte en
-grande, se devuelve NULL; de lo contrario,
-	un puntero al primer carácter de la primera
-se devuelve la ocurrencia de poco. */

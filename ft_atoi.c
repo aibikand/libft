@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 09:46:43 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/08 12:12:37 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/28 10:34:36 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	long			res;
-	long			sign;
-	unsigned int	i;
+	int	res;
+	int	sign;
+	int	i;
 
 	res = 0;
 	sign = 1;
@@ -40,10 +40,27 @@ int	ft_atoi(const char *str)
 	return ((int)(res * sign));
 }
 
-/* int main(void)
+/* ATOI(3) es una función de biblioteca C estándar.
+
+La parte inicial de la cadena de entrada se devuelve como un tipo int.
+
+Es decir, una función que devuelve la cadena de entrada como un número.
+
+Se ignoran todos los espacios en blanco al principio de la cadena.
+String reconoce los primeros signos + y -.
+Incluyendo las reglas anteriores, solo los números se reconocen y se convierten a int.
+Resuelve usando isspace(3) e isdigit(3). */
+
+/* DESCRIPCIÓN
+     La función atoi() convierte la parte inicial de la cadena a la que apunta str en representación int. */
+
+/* convertir cadena ASCII a entero. */
+
+/*
+int main(void)
 {
 	char *s = " 98764 987";
 	printf("%d %d", ft_atoi(s), atoi(s));
 	return (0);
-}
- */
+} */
+

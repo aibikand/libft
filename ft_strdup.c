@@ -6,7 +6,7 @@
 /*   By: aibikand <aibikand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/08 08:16:27 by aibikand          #+#    #+#             */
-/*   Updated: 2022/04/08 12:46:40 by aibikand         ###   ########.fr       */
+/*   Updated: 2022/04/28 08:15:40 by aibikand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,21 @@ char	*ft_strdup(const char *s1)
 	s1_new[count] = s1[count];
 	return (s1_new);
 }
+
+/* guardar una copia de una cadena (con malloc). */
+
+
+/* DESCRIPCIÓN
+     La función strdup() asigna suficiente memoria para una copia
+	 de la cadena s1, hace la copia y le devuelve un puntero.
+     El puntero se puede utilizar posteriormente como argumento
+	 de la función free(3).
+
+     Si no hay suficiente memoria disponible, se devuelve NULL
+	 y errno se establece en ENOMEM.
+
+     La función strndup() copia como máximo n caracteres de
+	 la cadena s1 siempre NUL terminando la cadena copiada. */
 
 /* int	main(void)
 {
