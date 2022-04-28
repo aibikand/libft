@@ -91,6 +91,17 @@ char	**ft_split(char const *s, char c)
 	return (strgs);
 }
 
+/*La función split es una función que recibe una cadena y un delimitador,
+divide la cadena por delimitadores y devuelve una matriz de cadenas bidimensional.
+
+Determina la longitud de las palabras (separadas por conjuntos) en una cadena.
+A diferencia de la división, que estudiamos anteriormente, no se considera
+el espacio en blanco, pero sí el delimitador.
+Debido a que la asignación dinámica debe realizarse correctamente,
+asigna dinámicamente según el tamaño.
+Se necesitan muchas funciones internas,
+así que declare static o agregue una función para usarla.*/
+	
 /* cadena dividida, con el carácter especificado como delimitador,
 en una matriz de cadenas. */
 
